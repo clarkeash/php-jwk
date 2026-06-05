@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\Key\Rsa;
 use Strobotti\JWK\KeySet;
@@ -13,9 +14,7 @@ use Strobotti\JWK\KeySet;
  */
 final class KeySetTest extends TestCase
 {
-    /**
-     * @dataProvider provideCreateFromJSON
-     */
+    #[DataProvider('provideCreateFromJSON')]
     public function testToString(string $expected, KeySet $keySet): void
     {
         $this->assertSame($expected, "{$keySet}");

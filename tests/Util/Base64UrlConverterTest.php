@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Tests\Util;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\Util\Base64UrlConverter;
 
@@ -12,9 +13,7 @@ use Strobotti\JWK\Util\Base64UrlConverter;
  */
 final class Base64UrlConverterTest extends TestCase
 {
-    /**
-     * @dataProvider provideDecode
-     */
+    #[DataProvider('provideDecode')]
     public function testDecode(string $expected, string $input): void
     {
         $converter = new Base64UrlConverter();
@@ -30,9 +29,7 @@ final class Base64UrlConverterTest extends TestCase
         ];
     }
 
-    /**
-     * @dataProvider provideEncode
-     */
+    #[DataProvider('provideEncode')]
     public function testEncode(string $expected, string $input): void
     {
         $converter = new Base64UrlConverter();

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\Key\KeyInterface;
@@ -15,9 +16,7 @@ use Strobotti\JWK\KeyConverter;
  */
 final class KeyConverterTest extends TestCase
 {
-    /**
-     * @dataProvider provideKeyToPem
-     */
+    #[DataProvider('provideKeyToPem')]
     public function testKeyToPem(KeyInterface $key, string $expected): void
     {
         $converter = new KeyConverter();

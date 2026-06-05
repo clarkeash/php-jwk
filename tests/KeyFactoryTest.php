@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\Key\Rsa;
 use Strobotti\JWK\KeyFactory;
@@ -13,9 +14,7 @@ use Strobotti\JWK\KeyFactory;
  */
 final class KeyFactoryTest extends TestCase
 {
-    /**
-     * @dataProvider provideCreateFromPem
-     */
+    #[DataProvider('provideCreateFromPem')]
     public function testCreateFromPem(string $pem, array $options, array $json, string $expectedInstance): void
     {
         $factory = new KeyFactory();

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Key\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\Key\Rsa;
 
@@ -12,9 +13,7 @@ use Strobotti\JWK\Key\Rsa;
  */
 final class RsaTest extends TestCase
 {
-    /**
-     * @dataProvider provideCreateFromJSON
-     */
+    #[DataProvider('provideCreateFromJSON')]
     public function testCreateFromJSON(array $expected, string $input): void
     {
         $key = Rsa::createFromJSON($input);

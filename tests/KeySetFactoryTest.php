@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Strobotti\JWK\Tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Strobotti\JWK\KeySet;
 use Strobotti\JWK\KeySetFactory;
@@ -13,9 +14,7 @@ use Strobotti\JWK\KeySetFactory;
  */
 final class KeySetFactoryTest extends TestCase
 {
-    /**
-     * @dataProvider provideCreateFromJSON
-     */
+    #[DataProvider('provideCreateFromJSON')]
     public function testCreateFromJSON(string $input): void
     {
         $factory = new KeySetFactory();
