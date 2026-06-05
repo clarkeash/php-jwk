@@ -34,6 +34,11 @@
     "phpunit/phpunit": "^10.5 || ^11.5",
     "friendsofphp/php-cs-fixer": "^3.75"
   },
+  "config": {
+    "platform": {
+      "php": "8.3"
+    }
+  },
   "scripts": {
     "test": "./vendor/bin/phpunit"
   },
