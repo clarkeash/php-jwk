@@ -4,6 +4,8 @@
 ![coverage](https://raw.githubusercontent.com/clarkeash/php-jwk/gh-pages/.badges/master/coverage.svg)
 [![License](https://poser.pugx.org/clarkeash/php-jwk/license)](https://packagist.org/packages/clarkeash/php-jwk)
 
+> **Note:** This is a fork of [strobotti/php-jwk](https://github.com/Strobotti/php-jwk), created because the original does not support PHP 8.4. This fork adds support for PHP 8.4 and above.
+
 A small PHP library to handle JWKs (Json Web Keys)
 
 This library helps to create json web key sets from PEM and is also able to pull out PEMs from json web key sets.
