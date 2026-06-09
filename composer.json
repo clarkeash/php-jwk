@@ -18,6 +18,9 @@
     }
   ],
   "license": "MIT",
+  "replace": {
+    "strobotti/php-jwk": "*"
+  },
   "require": {
     "php": ">=8.3",
     "ext-json": "*",
