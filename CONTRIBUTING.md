@@ -6,7 +6,7 @@ This is a very small library with a very limited scope but if you want to contri
 
 ### Reporting bugs
 
-You can open [a new issue](https://github.com/Strobotti/php-jwk/issues) once you have checked one covering your issue hasn't been opened yet.
+You can open [a new issue](https://github.com/clarkeash/php-jwk/issues) once you have checked one covering your issue hasn't been opened yet.
 
 ### Open a pull-request
 

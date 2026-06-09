@@ -1,10 +1,15 @@
 {
-  "name": "strobotti/php-jwk",
+  "name": "clarkeash/php-jwk",
   "description": "A small PHP library to handle JWKs (Json Web Keys)",
   "type": "library",
   "keywords": ["jwk", "jwks"],
-  "homepage": "https://github.com/Strobotti/php-jwk",
+  "homepage": "https://github.com/clarkeash/php-jwk",
   "authors": [
+    {
+      "name": "Ashley Clarke",
+      "email": "me@ashleyclarke.me",
+      "role": "Maintainer"
+    },
     {
       "name": "Juha Jantunen",
       "email": "juha@strobotti.com",

@@ -1,8 +1,8 @@
 # php-jwk
 
-[![Latest Stable Version](https://poser.pugx.org/strobotti/php-jwk/v/stable)](https://packagist.org/packages/strobotti/php-jwk)
-![coverage](https://raw.githubusercontent.com/Strobotti/php-jwk/gh-pages/.badges/master/coverage.svg)
-[![License](https://poser.pugx.org/strobotti/php-jwk/license)](https://packagist.org/packages/strobotti/php-jwk)
+[![Latest Stable Version](https://poser.pugx.org/clarkeash/php-jwk/v/stable)](https://packagist.org/packages/clarkeash/php-jwk)
+![coverage](https://raw.githubusercontent.com/clarkeash/php-jwk/gh-pages/.badges/master/coverage.svg)
+[![License](https://poser.pugx.org/clarkeash/php-jwk/license)](https://packagist.org/packages/clarkeash/php-jwk)
 
 A small PHP library to handle JWKs (Json Web Keys)
 
@@ -17,7 +17,7 @@ See [JSON Web Key RFC](https://tools.ietf.org/html/rfc7517) for reference.
 This library requires PHP version 8.3 or higher and can be installed with composer:
 
 ```bash
-$ composer require strobotti/php-jwk
+$ composer require clarkeash/php-jwk
 ```
 
 ## Example usage
